@@ -1,0 +1,219 @@
+!!! 5
+html(lang='en')
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    //
+       Title and other stuffs 
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600', rel='stylesheet', type='text/css')
+    //
+       Stylesheets 
+    link(href='/Content/Template/style/bootstrap.css', rel='stylesheet')
+    //
+       Pretty Photo 
+    link(href='/Content/Template/style/prettyPhoto.css', rel='stylesheet')
+    //
+       Flex slider 
+    link(href='/Content/Template/style/flexslider.css', rel='stylesheet')
+    //
+       Font awesome icon 
+    link(rel='stylesheet', href='/Content/Template/style/font-awesome.css')
+    //
+       Parallax slider 
+    link(rel='stylesheet', href='/Content/Template/style/slider.css')
+    //
+       Refind slider 
+    link(rel='stylesheet', href='~/Content/Template/style/refineslide.css')
+    //
+       Main stylesheet 
+    link(href='/Content/Template/style/style.css', rel='stylesheet')
+    //
+       Stylesheet for Color 
+    link(href='~/Content/Template/style/orange.css', rel='stylesheet')
+    //
+       Responsive style (from Bootstrap) 
+    link(href='/Content/Template/style/bootstrap-responsive.css', rel='stylesheet')
+    link(href='/Content/Site.min.css', rel='stylesheet')
+    //
+       HTML5 Support for IE 
+    //if lt IE 9
+      script(src='/Scripts/html5shim.js')
+    //
+       Favicon 
+    link(rel='shortcut icon', href='/Content/Template/img/favicon/favicon.png')
+  body
+    //
+       Header starts 
+    header
+      .container
+        .row
+          .span8
+            //
+               Navigation 
+            .navbar
+              .navbar-inner
+                .container
+                  a.btn.btn-navbar(data-toggle='collapse', style="float: left", data-target='.nav-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                  .nav-collapse.collapse
+                    ul.nav
+                      li 
+                        a(href='/') Home
+                      li.dropdown
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                          | Pages
+                          b.caret
+                        ul.dropdown-menu
+                          li
+                            a(href='faq') FAQ
+                      li 
+                        a(href='contact') Contact
+          .span4
+            //
+               Logo. Use class "color" to add color to the text. 
+            .logo
+              h1
+                a(href='#')
+                  | Web
+                  span.color.bold Wranglers
+              p.meta of Texas - A Software Cooperative
+
+    //
+       Seperator 
+    //
+       Header ends 
+    //
+       Clients starts 
+    .container
+        block content
+    //
+       Clients ends 
+    //
+       Footer starts 
+    footer
+      .container
+        .row
+          .span12
+            .row
+              .span4
+                .widget
+                  h5 Contact
+                  hr
+                  p
+                    | Feel free to contact us by phone or click here to 
+                    | email us.
+                  hr
+                  i.icon-home
+                  | Austin, Texas
+                  hr
+                  i.icon-phone
+                  | (512) 703-0177
+                  hr
+                  .social
+                    a(href='http://www.facebook.com/webwranglerstx#')
+                      i.icon-facebook.facebook
+                    a(href='http://twitter.com/WebWranglersTx')
+                      i.icon-twitter.twitter
+              //
+                    a(href='#')
+                      i.icon-linkedin.linkedin
+                    a(href='#')
+                      i.icon-google-plus.google-plus
+              .span4
+                .widget
+                  h5 About Us
+                  hr
+                  p
+                    | Web Wranglers of Texas is dedicated to producing high quality web applications while keeping 
+                    | software development wages highly competitive in the web development industry.
+              .span4
+                .widget
+                  h5 Technologies / Skills we support
+                  hr
+                  .two-col
+                    .col-left
+                      ul
+                        li
+                          a(href='#') Javascript
+                        li
+                          a(href='#') HTML5
+                        li
+                          a(href='#') Node.js
+                        li
+                          a(href='#') ASP.Net
+                        li
+                          a(href='#') Java
+                        li
+                          a(href='#') MongoDb
+                    .col-right
+                      ul
+                        li
+                          a(href='#') Jasmine Testing
+                        li
+                          a(href='#') PHP
+                        li
+                          a(href='#') Mobile Development
+                        li
+                          a(href='#') Python
+                        li
+                          a(href='#') C#
+                        li
+                          a(href='#') Objective C
+                    .clearfix
+            hr
+            //
+               Copyright info 
+               
+          a(href='#') Home
+          | |
+          a(href='#') About Us
+          | |
+          a(href='#') Contact Us
+        .clearfix
+    //
+       Footer ends 
+    //
+       Scroll to top 
+    span.totop
+      a(href='#')
+        i.icon-chevron-up
+    //
+       JS 
+    script(src='/Scripts/jquery-2.0.3.min.js')
+    //
+       jQuery 
+    script(src='/Scripts/bootstrap.js')
+    //
+       Bootstrap 
+    script(src='/Scripts/jquery.prettyPhoto.js')
+    //
+       Pretty Photo 
+    script(src='/Scripts/filter.js')
+    //
+       Filter for support page 
+    script(src='/Scripts/jquery.flexslider-min.js')
+    //
+       Flex slider 
+    script(src='/Scripts/jquery.cslider.js')
+    //
+       Parallax Slider 
+    script(src='/Scripts/modernizr.custom.28468.js')
+    //
+       Parallax slider extra 
+    script(src='/Scripts/jquery.carouFredSel-6.1.0-packed.js')
+    //
+       Carousel for recent posts 
+    script(src='/Scripts/jquery.refineslide.min.js')
+    //
+       Refind slider 
+    script(src='/Scripts/custom.js')
+    //
+       Custom codes 
+        @RenderSection("scripts", required: false)
